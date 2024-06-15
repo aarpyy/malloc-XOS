@@ -425,7 +425,7 @@ static size_t get_size(block_t *block)
  * get_payload_size: returns the payload size of a given block, equal to
  *                   the entire block size minus the header and footer sizes.
  */
-static word_t get_payload_size(block_t *block)
+static size_t get_payload_size(block_t *block)
 {
     size_t asize = get_size(block);
     return asize - dsize;

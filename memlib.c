@@ -21,7 +21,7 @@
 #ifdef _WIN32   /* Only use custom implementation on Windows */
 #include "mman.h"
 #else
-#include <mman.h>
+#include <sys/mman.h>
 #endif
 
 /* private global variables */

@@ -644,6 +644,13 @@ int main(int argc, char **argv)
                 avg_mm_geom_throughput, avg_mm_util*100);
         printf("%s\n", autoresult);
     }
+
+    (void)secs;
+    (void)ops;
+    (void)tput;
+    (void)util;
+    (void)numcorrect;
+
     exit(0);
 }
 
@@ -850,7 +857,7 @@ static bool check_index(const trace_t *trace, int opnum, int index) {
         }
     }
     if (ngarbled != 0) {
-        malloc_error(trace, opnum, "block %d (at %p) has %d garbled %s%s, starting at byte %llu", index, &block[firstgarbled], ngarbled, randint_t_name,
+        malloc_error(trace, opnum, "block %d (at %p) has %d garbled %s%s, starting at byte %lu", index, &block[firstgarbled], ngarbled, randint_t_name,
                      (ngarbled > 1 ? "s" : ""), sizeof(randint_t) * firstgarbled);
         return false;
     }
@@ -960,6 +967,8 @@ static trace_t *read_trace(stats_t *stats, const char *tracedir,
     strcpy(stats->filename, trace->filename);
     stats->weight = trace->weight;
     stats->ops = trace->num_ops;
+
+    (void)ignore;
 
     return trace;
 }
