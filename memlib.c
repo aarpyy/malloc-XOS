@@ -9,11 +9,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
-// TODO: Remove these includes
-//#include <fcntl.h>
-//#include <unistd.h>
-//#include <stdint.h>
-//#include <assert.h>
+#include <fcntl.h>
 
 #include "memlib.h"
 #include "config.h"
