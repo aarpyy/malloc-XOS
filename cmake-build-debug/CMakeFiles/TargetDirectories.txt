@@ -1,0 +1,8 @@
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/memlib.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/fcyc.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/clock.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/stree.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/mman.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/mdriver.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Andrew/CLionProjects/Grading/lab5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
