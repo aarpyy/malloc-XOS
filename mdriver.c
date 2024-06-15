@@ -858,7 +858,7 @@ static bool check_index(const trace_t *trace, int opnum, int index) {
     }
     if (ngarbled != 0) {
         malloc_error(trace, opnum, "block %d (at %p) has %d garbled %s%s, starting at byte %lu", index, &block[firstgarbled], ngarbled, randint_t_name,
-                     (ngarbled > 1 ? "s" : ""), sizeof(randint_t) * firstgarbled);
+                     (ngarbled > 1 ? "s" : ""), (unsigned long)sizeof(randint_t) * firstgarbled);
         return false;
     }
     return true;
